@@ -4,7 +4,7 @@ import PrimarySectionCard from "../components/PrimarySectionCard";
 
 const Primary = () => {
   return (
-    <section className="h-screen w-full flex flex-row relative bg-white">
+    <section className="h-screen w-screen overflow-x-hidden flex flex-row relative bg-white">
       <BulbScene />
       <PrimarySectionCard />
     </section>

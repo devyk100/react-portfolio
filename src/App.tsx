@@ -1,14 +1,14 @@
-import { useState } from "react";
+// import { useEffect, useState } from "react";
 import "./App.css";
 import Primary from "./sections/PrimarySection";
+import ProjectSection from "./sections/ProjectSection";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <main>
+      <main className="overflow-x-hidden">
         <Primary />
+        <ProjectSection />
       </main>
     </>
   );

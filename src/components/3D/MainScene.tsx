@@ -4,6 +4,7 @@ import * as THREE from "three";
 import RoadModel from "./RoadModel";
 import { Sparkles } from "@react-three/drei";
 import CarModel from "./CarModel";
+import gsap from "gsap";
 interface ModelParameters {
   position: [number, number, number];
   rotation: [number, number, number];
@@ -92,8 +93,18 @@ function MainScene() {
   const sparklesGroup = useRef<THREE.Group>(null);
   useEffect(() => {
     function sparkleScrollMove() {
-      sparklesGroup.current?.rotation.set(-window.scrollY * 0.00035, 0, 0);
-      sparklesGroup.current?.position.set(0, window.scrollY * 0.005, 0);
+      // sparklesGroup.current?.rotation.set(-window.scrollY * 0.00035, 0, 0);
+      //@ts-ignore
+      gsap.to(sparklesGroup.current?.rotation, {
+        x: -window.scrollY * 0.00035,
+        ease: "sine",
+      });
+      //@ts-ignore
+      gsap.to(sparklesGroup.current?.position, {
+        y: window.scrollY * 0.005,
+        ease: "power3",
+      });
+      // sparklesGroup.current?.position.set(0, window.scrollY * 0.005, 0);
     }
     function modelPositionSetter() {
       setModelParams(calculateModelParameters(window.innerWidth));

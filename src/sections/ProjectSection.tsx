@@ -16,6 +16,7 @@ function ProjectSection() {
             // +
             // commonClass
           }
+          id="top-right"
         >
           <GolangText />
         </div>

@@ -2,3 +2,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+#top-right{
+    background-image: url("/public/placeholder.jpg");
+    background-position: center;
+    background-size: 90% ;
+    background-repeat: no-repeat;
+}

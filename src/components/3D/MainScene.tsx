@@ -118,9 +118,11 @@ function MainScene() {
       </group>
       <group ref={sparklesGroup}>
         <Sparkles
-          count={100}
+          count={400}
           color={100000000}
-          size={8.5}
+          size={10}
+          opacity={0.25}
+          castShadow
           scale={10}
           position={[0, 0, 0]}
           noise={202}
@@ -128,7 +130,7 @@ function MainScene() {
         <Sparkles
           count={100}
           color={10000000}
-          size={8.5}
+          size={7}
           scale={10}
           position={[0, 0, 0]}
           noise={20}

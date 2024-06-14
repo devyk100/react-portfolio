@@ -13,7 +13,7 @@ function Scene() {
       }}
     >
       <MainScene />
-      {/* <AdaptiveDpr pixelated /> */}
+      <AdaptiveDpr pixelated />
       <Environment
         preset="dawn"
         // city in light mode

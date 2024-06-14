@@ -1,10 +1,10 @@
 import { Canvas } from "@react-three/fiber";
-import { Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import BulbModel from "./BulbModel";
 import { AdaptiveDpr, CameraControls, Environment } from "@react-three/drei";
 
 const BulbScene = () => {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [_, setWidth] = useState(window.innerWidth);
   useEffect(() => {
     function widthSetter() {
       setWidth(window.innerWidth);

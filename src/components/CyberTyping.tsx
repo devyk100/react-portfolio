@@ -72,28 +72,33 @@ function CyberTyping({
   const divRef = useRef<HTMLDivElement[]>([]);
   return (
     <>
-      <div
-        ref={(r) => {
-          if (r) divRef.current[0] = r;
-        }}
-        className={
-          "z-10 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 p-2 shadow-2xl " +
-          className
-        }
-      >
-        {tokens.map((value, i) => {
-          return (
-            <span
-              className={className}
-              key={i}
-              ref={(r) => {
-                if (r) spanRefs.current[i] = r;
-              }}
-            >
-              {value}
-            </span>
-          );
-        })}
+      <div className="font-extrabold z-10 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 p-2 shadow-2xl ">
+        <div
+          ref={(r) => {
+            if (r) divRef.current[0] = r;
+          }}
+          className={
+            className +
+            " bg-gradient-to-t text-transparent to-white from-gray-300 text-clip bg-clip-text "
+          }
+        >
+          {tokens.map((value, i) => {
+            return (
+              <span
+                className={
+                  className +
+                  " bg-gradient-to-t  text-transparent to-white from-gray-300 text-clip bg-clip-text"
+                }
+                key={i}
+                ref={(r) => {
+                  if (r) spanRefs.current[i] = r;
+                }}
+              >
+                {value}
+              </span>
+            );
+          })}
+        </div>
       </div>
     </>
   );

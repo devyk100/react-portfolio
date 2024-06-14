@@ -48,7 +48,7 @@ function PrimarySectionCard() {
           jpText="こんにちわ。ひらがなわじょずですか。"
           engText="I'm Yash Kumar"
           pattern={[1, 2, 1, 1, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1]}
-          className="text-white text-5xl text-center font-bold "
+          className="text-white text-5xl md:text-6xl text-center font-bold "
           finisher={() => setFinished(true)}
         />
         {/* <div className="text-4xl text-center">I'M YASH KUMAR</div> */}

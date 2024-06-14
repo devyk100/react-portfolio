@@ -1,12 +1,17 @@
 import React from "react";
-import BulbScene from "../components/BulbScene";
 import PrimarySectionCard from "../components/PrimarySectionCard";
+import Scene from "../components/3D/SceneComponent";
 
 const Primary = () => {
   return (
-    <section className="h-screen w-screen overflow-x-hidden flex flex-row relative bg-white">
-      <BulbScene />
-      <PrimarySectionCard />
+    <section className="w-screen relative bg-white shadow-lg">
+      <div className="h-screen absolute top-0 left-0 w-screen">
+        <Scene />
+      </div>
+      <div className="flex flex-row w-screen z-10">
+        <PrimarySectionCard />
+        <div className="h-screen md:w-1/2" />
+      </div>
     </section>
   );
 };

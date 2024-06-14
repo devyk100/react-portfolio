@@ -43,16 +43,16 @@ function PrimarySectionCard() {
   }, [finished]);
   return (
     <Suspense fallback={"Loading..."}>
-      <div className="w-full flex h-full items-center p-20 flex-col mr justify-center bg-black text-white">
+      <div className="w-full flex h-screen items-center p-20 flex-col mr justify-center bg-black text-white ">
         <CyberTyping
           jpText="こんにちわ。ひらがなわじょずですか。"
           engText="I'm Yash Kumar"
           pattern={[1, 2, 1, 1, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1]}
-          className="text-5xl text-center font-bold"
+          className="text-white text-5xl text-center font-bold "
           finisher={() => setFinished(true)}
         />
         {/* <div className="text-4xl text-center">I'M YASH KUMAR</div> */}
-        <div className="text-2xl mt-4 text-center">
+        <div className="text-2xl mt-4 text-center bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 shadow-2xl shadow-gray-950">
           <span className="relative inline-block z-10 overflow-hidden">
             Software Engineer.{" "}
             <span className="absolute bottom-0 left-0 h-2 w-full overflow-hidden rounded-full shadow-inner">
@@ -63,7 +63,7 @@ function PrimarySectionCard() {
             </span>
           </span>{" "}
           <span className="relative inline-block z-10 overflow-hidden">
-            Full Stack Web Developer.{"  "}
+            Full Stack Web.{"  "}
             <span className="absolute bottom-0 left-0 h-2 w-full rounded-full">
               <span
                 id="underliner_2"

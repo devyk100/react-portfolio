@@ -76,7 +76,10 @@ function CyberTyping({
         ref={(r) => {
           if (r) divRef.current[0] = r;
         }}
-        className={className}
+        className={
+          "z-10 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 p-2 shadow-2xl " +
+          className
+        }
       >
         {tokens.map((value, i) => {
           return (

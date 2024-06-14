@@ -1,5 +1,5 @@
 function ProjectSection() {
-  return <section>ProjectSection</section>;
+  return <section className="h-screen bg-black"></section>;
 }
 
 export default ProjectSection;

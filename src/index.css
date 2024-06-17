@@ -4,8 +4,8 @@
 @tailwind utilities;
 
 
-#top-right{
-    background-image: url("/public/placeholder.jpg");
+.bento-divs{
+    background-image: url("/placeholder.jpg");
     background-position: center;
     background-size: 90% ;
     background-repeat: no-repeat;
